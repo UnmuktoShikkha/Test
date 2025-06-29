@@ -1,0 +1,14 @@
+{
+  "dhaka": [
+    ["What is the capital of Bangladesh?", "Chittagong", "Dhaka", "Sylhet", "Khulna", "b"],
+    ["Which year did Bangladesh gain independence?", "1952", "1965", "1971", "1980", "c"]
+  ],
+  "sylhet": [
+    ["Which river flows through Sylhet?", "Padma", "Meghna", "Surma", "Jamuna", "c"],
+    ["Famous tea garden location?", "Cox's Bazar", "Sylhet", "Barisal", "Dinajpur", "b"]
+  ],
+  "rajshahi": [
+    ["What fruit is Rajshahi famous for?", "Banana", "Mango", "Jackfruit", "Litchi", "b"],
+    ["Which region is called Silk City?", "Rangpur", "Khulna", "Rajshahi", "Comilla", "c"]
+  ]
+}
