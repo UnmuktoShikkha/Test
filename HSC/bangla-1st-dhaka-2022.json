@@ -1,4 +1,12 @@
 [
+  { 
+    "subject": "Bangla 1st Paper",
+    "board": "Dhaka",
+    "year": 2022,
+    "sourceQ": "Lecture Publications",
+    "sourceA": "Lecture Publications",
+    "note": "Question and answer sourced from Lecture Publications.",
+  },
   {
     "q": "‘আমি তোমাকে দেখবার জন্য ব্যস্ত হয়ে পড়েছিলাম’- উক্তিটি কার?",
     "o": ["বঙ্গবন্ধু শেখ মুজিবুর রহমান", "শেখ কামাল", "শেখ হাসিনা", "শেখ ফজিলাতুন্নেসা মুজিব"],
