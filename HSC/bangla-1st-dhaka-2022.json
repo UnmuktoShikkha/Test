@@ -1,6 +1,7 @@
 [
   { 
-    "subject": "Bangla 1st Paper",
+    "subject": "Bangla",
+    "paper": "1st",
     "board": "Dhaka",
     "year": 2022,
     "sourceQ": "Lecture Publications",
