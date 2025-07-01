@@ -1,0 +1,35 @@
+    .quiz-question {font-family: "Noto Serif Bengali", serif; margin-bottom: 15px; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 6px;}
+    .quiz-question b {font-weight: 700;}
+    .uddipok {font-family: "Noto Serif Bengali", serif; background: #eef; padding: 15px; border-left: 5px solid #88f; border-right: 1px solid #ddd; margin-bottom: 15px; border-radius: 6px;}
+    .uddipok b {font-weight: 700;}
+    .uddipok span {white-space: pre-wrap;}
+    .quiz-options {display: flex; flex-wrap: wrap; gap: 10px;}
+    .quiz-option {margin-bottom: 10px;}
+    .quiz-option input[type="checkbox"], .quiz-option input[type="radio"] {position: absolute; opacity: 0; pointer-events: none;}
+    .quiz-option label {display: flex; align-items: center; position: relative; padding-left: 40px; cursor: pointer; font-size: 16px; line-height: 28px; font-family: "Noto Serif Bengali", serif;}
+    .quiz-option label::before {content: attr(data-label); position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; background-color: white; border: 2px solid #888; text-align: center; line-height: 28px; font-weight: bold; font-size: 16px; border-radius: 4px; color: #444; box-sizing: border-box; user-select: none;}
+    .quiz-option input:checked + label::before {background-color: #4caf50; color: white; border-color: #4caf50;}
+	.correct, .incorrect { padding: 0 4px; border-radius: 4px; transition: background-color 0.3s ease; }
+	.correct { background: linear-gradient(to right, #c8e6c9 100%, transparent 0%); background-size: 0% 100%; background-repeat: no-repeat; animation: marker-swipe 0.6s ease-out forwards; border-radius: 4px; }
+	.correct-reverse { background: linear-gradient(to right, #c8e6c9 100%, transparent 0%); background-size: 100% 100%; background-repeat: no-repeat; animation: marker-swipe-reverse 0.6s ease-out forwards; border-radius: 4px; }
+	html.drK .correct { background: linear-gradient(to right, #2e7d32 100%, transparent 0%); background-size: 0% 100%; background-repeat: no-repeat; animation: marker-swipe 0.6s ease-out forwards; border-radius: 4px; }
+	html.drK .correct-reverse { background: linear-gradient(to right, #2e7d32 100%, transparent 0%); background-size: 100% 100%; background-repeat: no-repeat; animation: marker-swipe-reverse 0.6s ease-out forwards; border-radius: 4px; }
+	@keyframes marker-swipe { 0% { background-size: 0% 100%; } 100% { background-size: 100% 100%; } }
+	@keyframes marker-swipe-reverse { 0% { background-size: 100% 100%; } 100% { background-size: 0% 100%; } }
+	.incorrect { background: linear-gradient(to right, #ffcdd2 100%, transparent 0%); background-size: 0% 100%; background-repeat: no-repeat; animation: marker-swipe-red 0.6s ease-out forwards; border-radius: 4px; }
+	.incorrect-reverse { background: linear-gradient(to right, #ffcdd2 100%, transparent 0%); background-size: 100% 100%; background-repeat: no-repeat; animation: marker-swipe-red-reverse 0.6s ease-out forwards; border-radius: 4px; }
+	html.drK .incorrect { background: linear-gradient(to right, #b71c1c 100%, transparent 0%); background-size: 0% 100%; background-repeat: no-repeat; animation: marker-swipe-red 0.6s ease-out forwards; border-radius: 4px; }
+	html.drK .incorrect-reverse { background: linear-gradient(to right, #b71c1c 100%, transparent 0%); background-size: 100% 100%; background-repeat: no-repeat; animation: marker-swipe-red-reverse 0.6s ease-out forwards; border-radius: 4px; }
+	@keyframes marker-swipe-red { 0% { background-size: 0% 100%; } 100% { background-size: 100% 100%; } }
+	@keyframes marker-swipe-red-reverse { 0% { background-size: 100% 100%; } 100% { background-size: 0% 100%; } }
+    .result { font-weight: 500; margin-top: 20px;}
+    input[type=radio], input[type=checkbox] { cursor: pointer; }
+    .button-wrapper { display: flex; justify-content: center; gap: 12px; margin: 20px auto; }
+    .button-wrapper button { padding: 10px 20px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; background-color: #4caf50; color: white; transition: background-color 0.3s ease; }
+    .button-wrapper button#reset-btn { background-color: #f44336; }
+    .button-wrapper button:hover { background-color: #388e3c; }
+    .button-wrapper button#reset-btn:hover { background-color: #d32f2f; }
+    .button-wrapper button:disabled { background-color: #ccc; cursor: not-allowed; }
+    html.drK .quiz-question { background-color: #222; color: #eee; }
+    html.drK .uddipok { background: #606089; color: #eee; }
+	#reset-btn::before { content: "\09B0\09BF\09B8\09C7\099F"; }
